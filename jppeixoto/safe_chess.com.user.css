@@ -9,10 +9,14 @@
 ==/UserStyle== */
 @-moz-document domain("chess.com") {
 /*-----------Esconder avatar do chesscom-----------*/
-  
-    img:not([alt="jppeixoto29"]) {
-           content: url("https://betacssjs.chesscomfiles.com/bundles/web/images/black_400.918cdaa6.png")!important;
-    }
+.player-image:not([alt="jppeixoto29"]) {
+    content: url("https://betacssjs.chesscomfiles.com/bundles/web/images/black_400.918cdaa6.png")!important;
+}
 
+.game-over-player-picture:not([alt="jppeixoto29"]) {
+    content: url("https://betacssjs.chesscomfiles.com/bundles/web/images/black_400.918cdaa6.png")!important;
+}
+    
 /*--end section--*/
 }
+
