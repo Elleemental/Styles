@@ -9,19 +9,29 @@
 ==/UserStyle== */
 @-moz-document domain("chess.com") {
 /*-----------Esconder avatar do chesscom-----------*/
-.player-image:not([alt="jppeixoto29"]):not([alt="babi3105"]):not([alt="Agiota_do_Artenio"]):not([alt="Ellemental"]) {
-        filter: blur(2px)!important;
-        -webkit-filter: blur(2px)!important;
-        opacity: 70%!important;
-    /* content: url("https://betacssjs.chesscomfiles.com/bundles/web/images/black_400.918cdaa6.png")!important; */
+.player-image.avatar-component:not([alt="jppeixoto29"]), .board-player-default-userAvatar:not([alt="jppeixoto29"]) {
+    /*content: url("https://betacssjs.chesscomfiles.com/bundles/web/images/black_400.918cdaa6.png")!important;*/
+    filter: blur(3px)!important;
+    -webkit-filter: blur(3px)!important;
+    opacity: 70%!important;
+}
+/*Regra separada para a tela que aparece ao final das partidas mostrando o resultado. Como as imagens
+  aparecem maiores, precisam de um tratamento separado com desfocado mais forte*/
+.game-over-player-picture:not([alt="jppeixoto29"]) {
+    /*content: url("https://betacssjs.chesscomfiles.com/bundles/web/images/black_400.918cdaa6.png")!important;*/
+    filter: blur(5px)!important;
+    -webkit-filter: blur(5px)!important;
+    opacity: 70%!important;
+}
+ 
+    
+.player-info-vertical-avatar:not([alt="jppeixoto29"]) {
+    /*content: url("https://betacssjs.chesscomfiles.com/bundles/web/images/black_400.918cdaa6.png")!important;*/
+    filter: blur(5px)!important;
+    -webkit-filter: blur(5px)!important;
+    opacity: 70%!important;
 }
 
-.game-over-player-picture:not([alt="jppeixoto29"]):not([alt="babi3105"]):not([alt="Agiota_do_Artenio"]):not([alt="Ellemental"]) {
-        filter: blur(2px)!important;
-        -webkit-filter: blur(2px)!important;
-        opacity: 70%!important;
-    /* content: url("https://betacssjs.chesscomfiles.com/bundles/web/images/black_400.918cdaa6.png")!important; */
-}
     
 /*--end section--*/
 }
